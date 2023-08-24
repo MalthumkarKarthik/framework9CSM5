@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class WebDriverUtility {
 	private WebDriver driver;
-	public void navigateToApp(String browser,String url,long time) {
+	public WebDriver navigateToApp(String browser,String url,long time) {
 		switch (browser) {
 		case "chrome":
 			driver=new ChromeDriver();
@@ -32,7 +32,7 @@ public class WebDriverUtility {
 		driver.manage().window().maximize();
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(time));
-		
+		return driver;
 	}
 	public void mouseHover(WebElement element) {
 		Actions actions =new Actions(driver);

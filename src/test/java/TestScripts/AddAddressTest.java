@@ -1,5 +1,13 @@
 package TestScripts;
 
-public class AddAddressTest {
+import genariclibarary.BaseClass;
+
+public class AddAddressTest extends BaseClass{
+	@Test
+	public class  CreateAddress(){
+		
+		
+		
+	}
 
 }

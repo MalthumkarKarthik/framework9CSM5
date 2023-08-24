@@ -36,7 +36,9 @@ public class AddressFormPage {
 		PageFactory.initElements( driver, this);
 	}
 	//Utilization
-	public void addAddressDetails(WebDriverUtility web,String name,String HouseOfficeInfo,String StreetInfo,String Landmark,String Country,String State,String City,String Pincode,String PhoneNumber,String AddAddressButton)
+	public void addAddressDetails(WebDriverUtility web,String name,String HouseOfficeInfo,
+			String StreetInfo,String Landmark,String Country,String State,String City,
+			String Pincode,String PhoneNumber,String AddAddressButton)
 	{
 		NameTF.sendKeys(name);
 		HouseOfficeInfoTF.sendKeys(HouseOfficeInfo);

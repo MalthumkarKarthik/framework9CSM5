@@ -79,7 +79,7 @@ public class BaseClass {
 	{
 		home.ClickProfileButton();
 		home.clickLogout();
-		webUtil.closeAller();
+		webUtil.closeSingleBrowser();
 	}
 	
 	@AfterClass
